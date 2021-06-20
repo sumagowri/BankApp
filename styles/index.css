@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+:root{
+    --dark-color:#26203f;
+    --white-color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+    background: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--white-color);
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 50rem;
+}
+
+aside{
+    padding: 0.5rem 1rem;
+    width: 16rem;
+    border-right: 1px solid var(--white-color);
+}
+
+button{
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    transform:translateY(5px);
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+main{
+    flex: 1;
+    padding: 0.5rem 1rem;
+}
+
+h2{
+    border-bottom: 1px solid var(--white-color);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 0;
+}
+
+.users,h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h3{
+    color: aqua;
+    border-top: 1px solid var(--white-color);
+    padding-top: 0.5rem;
+}
+
+@media(max-width:400px){
+    html{
+        font-size: 10px;
+    }
+    aside{
+        width:10rem;
+    }
+    .users,h3{
+        font-size: 1.5rem;
+    }
+}
